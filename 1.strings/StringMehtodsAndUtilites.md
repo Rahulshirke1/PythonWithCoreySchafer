@@ -1,6 +1,6 @@
 # 🐍 Python Basics – Strings, Methods, and Utilities
 
-This section of the **Learning Python** repository covers the **fundamentals of string manipulation**, **methods**, and useful **built-in functions** like `dir()` and `help()`.
+## This section of the **Learning Python** repository covers the **fundamentals of string manipulation**, **methods**, and useful **built-in functions** like `dir()` and `help()`.
 
 ---
 
