@@ -1,0 +1,257 @@
+# 📘 Python: Lists, Tuples & Sets
+
+Welcome to the **Python Notes Repository**! This document contains beginner-friendly explanations and examples of three core Python data structures:
+
+* Lists
+* Tuples
+* Sets
+
+---
+
+## 📚 What is a List in Python?
+
+A **list** is a collection of items stored in a single variable.
+
+### ✅ Features:
+
+* **Ordered**: You can access items by index.
+* **Mutable**: You can change the values.
+* **Flexible**: Can store different data types.
+
+---
+
+### 🔢 Accessing Elements:
+
+```python
+course = ['History', 'Math', 'Physics', 'CompSci']
+print(course)
+print(len(course))
+print(course[0])       # Indexing
+print(course[-1])      # Negative indexing
+```
+
+### 📏 Slicing:
+
+```python
+course = ['History', 'Math', 'Physics', 'CompSci']
+print(course[0:2])     # ['History', 'Math']
+print(course[:2])      # ['History', 'Math']
+print(course[2:])      # ['Physics', 'CompSci']
+```
+
+---
+
+## 🔧 List Methods
+
+### 1. `append()`
+
+```python
+course = ['History', 'Math', 'Physics', 'CompSci']
+course.append("Art")
+print(course)  # Adds 'Art' to the end
+```
+
+### 2. `insert()`
+
+```python
+course = ['History', 'Math', 'Physics', 'CompSci']
+course.insert(0, 'Art')
+print(course)
+
+# Nested list example
+course_2 = ['Art', "GK"]
+courses.insert(0, course_2)
+print(courses)  # [['Art', 'GK'], ...]
+```
+
+### 3. `extend()`
+
+```python
+course = ['History', 'Math', 'Physics', 'CompSci']
+course_2 = ['Art', "GK"]
+courses.extend(course_2)
+print(courses)
+```
+
+### 4. `remove()`
+
+```python
+course = ['History', 'Math', 'Physics', 'CompSci']
+courses.remove('Math')
+print(courses)
+```
+
+### 5. `pop()`
+
+```python
+course = ['History', 'Math', 'Physics', 'CompSci']
+courses.pop()      # Removes last
+courses.pop(0)     # Removes first
+print(courses)
+```
+
+### 6. `reverse()`
+
+```python
+course = ['History', 'Math', 'Physics', 'CompSci']
+courses.reverse()
+print(courses)
+```
+
+### 7. `sort()`
+
+```python
+course = ['History', 'Math', 'Physics', 'CompSci']
+courses.sort()
+print(courses)
+
+nums = [1, 5, 8, 3, 4, 6, 7, 2]
+nums.sort(reverse=True)
+print(nums)
+```
+
+### 8. `sorted()`
+
+```python
+course = ['History', 'Math', 'Physics', 'CompSci']
+sorted_courses = sorted(courses)
+print(sorted_courses)
+print(courses)  # Original remains unchanged
+```
+
+### 9. `min()` / `max()` / `sum()`
+
+```python
+nums = [1, 5, 8, 3, 4, 6, 7, 2]
+print(min(nums))  # 1
+print(max(nums))  # 8
+print(sum(nums))  # 36
+```
+
+### 10. `index()`
+
+```python
+courses = ['History', 'Math', 'Physics', 'CompSci']
+print(courses.index('Physics'))
+```
+
+### 11. `in` keyword
+
+```python
+courses = ['History', 'Math', 'Physics', 'CompSci']
+print('Art' in courses)   # False
+print('Math' in courses)  # True
+```
+
+### 12. Looping
+
+```python
+courses = ['History', 'Math', 'Physics', 'CompSci']
+for item in courses:
+    print(item)
+```
+
+### 13. `enumerate()`
+
+```python
+courses = ['History', 'Math', 'Physics', 'CompSci']
+for index, item in enumerate(courses):
+    print(index, item)
+
+# With custom start
+for index, item in enumerate(courses, start=1):
+    print(index, item)
+```
+
+### 14. `join()` and `split()`
+
+```python
+courses = ['History', 'Math', 'Physics', 'CompSci']
+course_str = '-'.join(courses)
+print(course_str)
+
+location = '/India/Maharashtra/Mumbai/Dahisar/Kandarpada'
+new_list = location.split('/')
+print(new_list)
+```
+
+---
+
+## 🧊 Tuples in Python
+
+A **tuple** is like a list, but **immutable**.
+
+### ✅ Features:
+
+* Ordered
+* Immutable
+* Allows duplicates
+* Can contain any type
+
+### Examples:
+
+```python
+courses = ('History', 'Math', 'Physics', 'CompSci')
+for item in courses:
+    print(item)
+
+for index, item in enumerate(courses, start=1):
+    print(index, item)
+
+# Immutable Example
+tuple_1 = ('History', 'Math', 'Physics', 'CompSci')
+tuple_1[0] = 'Art'  # ❌ Error: tuples are immutable
+```
+
+---
+
+## 🟣 Sets in Python
+
+A **set** is a collection of **unordered, unindexed**, and **unique** items.
+
+### ✅ Features:
+
+* No duplicates
+* Unordered
+* Mutable
+
+### Examples:
+
+```python
+cs_courses = {'History', 'Math', 'Physics', 'CompSci'}
+art_courses = {'History', 'Art', 'Design'}
+print(type(cs_courses))
+print(cs_courses)
+```
+
+### `intersection()`
+
+```python
+cs_courses = {'History', 'Math', 'Physics', 'CompSci'}
+art_courses = {'History', 'Art', 'Design'}
+print(cs_courses.intersection(art_courses))  # {'History'}
+```
+
+### `difference()`
+
+```python
+cs_courses = {'History', 'Math', 'Physics', 'CompSci'}
+art_courses = {'History', 'Art', 'Design'}
+print(cs_courses.difference(art_courses))    # {'Math', 'CompSci', 'Physics'}
+```
+
+### `union()`
+
+```python
+cs_courses = {'History', 'Math', 'Physics', 'CompSci'}
+art_courses = {'History', 'Art', 'Design'}
+print(cs_courses.union(art_courses))  # {'Physics', 'Design', 'Math', 'Art', 'History', 'CompSci'}
+```
+
+---
+
+### 👨‍💻 Happy Learning!
+
+Keep practicing and experimenting to get comfortable with Python data structures.
+
+Contributions and pull requests are welcome. ⭐ this repo if you found it helpful!
