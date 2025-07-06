@@ -279,3 +279,12 @@ print(cs_courses.union(art_courses))  # {'Physics', 'Design', 'Math', 'Art', 'Hi
 Keep practicing and experimenting to get comfortable with Python data structures.
 
 Contributions and pull requests are welcome. ⭐ this repo if you found it helpful!
+
+
+---
+
+## ✍️ Created By
+
+**Rahul Anil Shirke**  
+[GitHub](https://github.com/Rahulshirke1) • [LinkedIn](https://www.linkedin.com/in/rahul-shirke/)  
+🎓 B.E. in Information Technology | Passionate about Python, Web Dev & AI 🚀
