@@ -137,3 +137,10 @@ for key, value in student.items():
 | Value Types | Any (can be list, string, int, etc.)         |
 
 
+---
+
+## ✍️ Created By
+
+**Rahul Anil Shirke**  
+[GitHub](https://github.com/Rahulshirke1) • [LinkedIn](https://www.linkedin.com/in/rahul-shirke/)  
+🎓 B.E. in Information Technology | Passionate about Python, Web Dev & AI 🚀
