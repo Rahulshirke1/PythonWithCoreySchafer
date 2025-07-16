@@ -81,23 +81,27 @@ print(num)  # Output: (practise each and check the output)
 ## 🧰 Number Methods
 
 ### 1. abs() – Absolute Value
+The abs() function in Python returns the absolute value of a number. That means it returns the number without its sign.
 ```python
 print(abs(-3))         # 3
 print(abs(3 + 4j))     # 5.0 (magnitude of complex number)
 ```
 
 ### 2. round() – Rounding Numbers
+The round() function in Python is used to round a number to the nearest integer or to a given number of decimal places.
 ```python
 print(round(3.75))      # 4
 print(round(3.75, 1))   # 3.8
 ```
 
 ### 3. sum() – Sum of an Iterable
+The sum() function in Python is used to calculate the total (sum) of all elements in an iterable (like a list, tuple, etc.).
 ```python
 print(sum([1, 2, 3, 4]))  # 10
 ```
 
 ### 4. max() and min() – Maximum and Minimum
+the max() and min() functions are used to find the largest and smallest values from a set of values or an iterable (like a list, tuple, etc.).
 ```python
 print(max(5, 10, 2))  # 10
 print(min(5, 10, 2))  # 2
@@ -107,6 +111,7 @@ print(min(5, 10, 2))  # 2
 
 
 ## 🔄 Type Casting
+Type casting means converting one data type to another. Python allows explicit and implicit type casting.
 ```python
 num_1 = '100'
 num_2 = '200'
@@ -139,6 +144,7 @@ print(round(random.random() * 10))  # Random number 0–10
 ```
 
 ### 2. random.randint(a, b) – Random integer between a and b (inclusive)
+The randint() function is used to generate a random integer between two given numbers inclusive (i.e., both the start and end values are included).
 ```python
 print(random.randint(1, 6))  # Simulates a dice roll (1 to 6)
 ```
