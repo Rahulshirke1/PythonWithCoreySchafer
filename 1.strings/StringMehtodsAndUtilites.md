@@ -48,6 +48,7 @@ print(message[8])  # Output: 'r'
 ```python
 message = 'hello World'
 print(message[2:7])  # Output: 'llo W'
+print(message[2:2])  # Output: 
 ```
 
 ---
