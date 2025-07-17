@@ -117,7 +117,7 @@ print(hello_func("Hi", name="Corey")) # Hi, Corey are you beauty
 ## 🧵 \*args and \*\*kwargs
 
 ### ✅ \*args → Arbitrary Positional Arguments
-
+In Python, *args is used to pass a variable number of positional arguments to a function. 
 ```python
 def student_info(*args):
     print(args)
@@ -126,8 +126,17 @@ student_info("Math", "Art")
 # Output: ('Math', 'Art')
 ```
 
-### ✅ \*\*kwargs → Arbitrary Keyword Arguments
+🧠 Why Use *args?
+When you don’t know how many arguments will be passed
 
+When writing flexible functions
+
+Useful in functions like print(), sum(), etc.
+
+
+
+### ✅ \*\*kwargs → Arbitrary Keyword Arguments
+It allows you to pass a variable number of keyword arguments (key-value pairs) to a function.
 ```python
 def student_info(**kwargs):
     print(kwargs)
@@ -135,6 +144,8 @@ def student_info(**kwargs):
 student_info(name="John", age=22)
 # Output: {'name': 'John', 'age': 22}
 ```
+✅ Why Use **kwargs?
+You use **kwargs (arbitrary keyword arguments) when you want your function to accept any number of named (keyword) arguments, especially when you don’t know in advance how many or what they will be.
 
 ### ✅ Both Together
 
