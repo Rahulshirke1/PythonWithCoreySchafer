@@ -161,6 +161,27 @@ for i in range(1, 11):
 1 to 10
 ```
 
+```python
+for i in range(1, 10, 2):
+    print(i)
+```
+🔍 Explanation:
+start = 1 → Start from 1
+
+stop = 10 → Go up to but not including 10
+
+step = 2 → Increase by 2 every time
+
+📤 Output:
+
+```
+1
+3
+5
+7
+9
+```
+
 ---
 
 ## 🔄 while Loop
