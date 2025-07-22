@@ -1,0 +1,83 @@
+🧠 What is Jupyter?
+Jupyter Notebook is an interactive web-based environment where you can:
+Write and run Python code (and other languages too)
+Visualize data (plots, tables)
+Add markdown notes (headings, bullet points, equations, etc.)
+Mix code and rich text in one document
+
+It’s especially useful for:
+Data analysis
+Machine learning experiments
+Teaching and documentation
+
+
+
+step to work on Jupyter:
+
+🚀 Step 1: Install Jupyter Notebook
+If you're using Anaconda (recommended), Jupyter is already included.
+
+Otherwise, install using pip:
+pip install notebook
+
+
+⚙️ Step 2: Launch Jupyter
+From the terminal or Anaconda Prompt:
+jupyter notebook
+This opens Jupyter in your browser at http://localhost:8888.
+
+
+📝 Step 3: Create Your First Notebook
+1. Click "New" → Python 3 (ipykernel).
+2. You’ll see a notebook interface with cells.
+▶️ Types of Cells:
+    Code cell: For writing Python code
+    Markdown cell: For notes, headings, links, etc.
+    Switch cell type from the dropdown or using:
+    Esc + M → Markdown
+    Esc + Y → Code
+
+✅ Step 4: Run Code
+Type in a code cell:
+print("Hello, Jupyter!")
+
+Run it with:
+Shift + Enter
+
+
+🖋️ Step 5: Markdown Example
+In a Markdown cell:
+# This is a heading
+## This is a sub-heading
+- Bullet 1
+- Bullet 2
+
+**Bold Text**
+_Italic Text_
+
+`inline code`
+
+```python
+# code block
+print("Hello!")
+```
+
+
+📊 Step 6: Plotting Example
+Make sure `matplotlib` is installed:
+pip install matplotlib
+
+Then in a notebook cell:
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4]
+y = [10, 20, 25, 30]
+
+plt.plot(x, y)
+plt.title("Simple Line Plot")
+plt.show()
+
+
+💾 Step 7: Save and Export
+    Save your work: File → Save and Checkpoint
+    Export as PDF, HTML, etc.: File → Download As
